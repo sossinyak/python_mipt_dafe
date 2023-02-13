@@ -1,0 +1,5 @@
+*.ipynb_checkpoints/
+*__pycache__/
+
+sem2/sem2_functions_solved.ipynb
+sem3/vector3d_solved.py
