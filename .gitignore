@@ -1,6 +1,8 @@
 *.ipynb_checkpoints/
 *__pycache__/
 
+*venv/
+
 sem2/sem2_functions_solved.ipynb
 sem2/sem2_functions_practice.ipynb
 
