@@ -13,3 +13,4 @@
 ___
 ### Домашние задания:
 1. [Домашнее задание 1 "N-мерный вектор"](https://github.com/EvgrafovMichail/python_mipt_dafe/tree/2022-2023_spring/hw1);
+2. [Домашнее задание 2 "Метод Наименьших Квадратов"](https://github.com/EvgrafovMichail/python_mipt_dafe/tree/2022-2023_spring/hw2);
