@@ -9,6 +9,7 @@
 3. [Семинар 3 "Введение в пользовательские классы"](https://github.com/EvgrafovMichail/python_mipt_dafe/tree/2022-2023_spring/sem3);
 4. [Семинар 4 "Введение в NumPy"](https://github.com/EvgrafovMichail/python_mipt_dafe/tree/2022-2023_spring/sem4);
 5. [Семинар 5 "Визуализация данных: введение в Matplotlib"](https://github.com/EvgrafovMichail/python_mipt_dafe/tree/2022-2023_spring/sem5);
+6. [Семинар 6 "Введение в Pandas"](https://github.com/EvgrafovMichail/python_mipt_dafe/tree/2022-2023_spring/sem6);
 ___
 ### Домашние задания:
 1. [Домашнее задание 1 "N-мерный вектор"](https://github.com/EvgrafovMichail/python_mipt_dafe/tree/2022-2023_spring/hw1);
