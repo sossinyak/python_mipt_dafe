@@ -28,8 +28,10 @@ class Vector3D:
     __z: float
     
     def __init__(self, x=0, y=0, z=0):
-        # ВАШ КОД
-        pass
+        
+        self.__x = float(x)
+        self.__y = float(y)
+        self.__z = float(z)
         
     def __iter__(self):
         
@@ -38,52 +40,54 @@ class Vector3D:
         return (coordinate for coordinate in coordinates)
     
     def __repr__(self):
-        # ВАШ КОД
-        pass
+        return f'Vector3D({self.__x}, {self.__y}, {self.__z})'
     
     def __abs__(self):
-        # ВАШ КОД
-        pass
+        return sum(coord ** 2 for coord in self) ** 0.5
     
     def __bool__(self):
-        # ВАШ КОД
-        pass
+        return bool(abs(self))
     
-    def __eq__(self, other):
-        # ВАШ КОД
-        pass
+    def __eq__(self, other):    
+        return all(a == b for a, b in zip(self, other))
     
     def __neg__(self):
-        # ВАШ КОД
-        pass
+        return Vector3D(-self.__x, -self.__y, -self.__z)
     
     def __add__(self, other):
-        # ВАШ КОД
-        pass
+        
+        sum_x = self.__x + other.__x
+        sum_y = self.__y + other.__y
+        sum_z = self.__z + other.__z
+
+        return Vector3D(sum_x, sum_y, sum_z)
     
     def __sub__(self, other):
-        # ВАШ КОД
-        pass
+        return self + -other
     
     def __mul__(self, scalar):
-        # ВАШ КОД
-        pass
+        return Vector3D(
+            self.__x * scalar,
+            self.__y * scalar,
+            self.__z * scalar
+        )
     
     def __rmul__(self, scalar):
-        # ВАШ КОД
-        pass
+        return self * scalar
     
     def __truediv__(self, scalar):
-        # ВАШ КОД
-        pass
+        return self * (1 / scalar)
     
     def dot(self, other):
-        # ВАШ КОД
-        pass
+        return sum(a * b for a, b in zip(self, other))
     
     def cross(self, other):
-        # ВАШ КОД
-        pass
+        
+        det1 = self.__y * other.__z - self.__z * other.__y
+        det2 = -(self.__x * other.__z - self.__z * other.__x)
+        det3 = self.__x * other.__y - self.__y * other.__x
+
+        return Vector3D(det1, det2, det3)
         
     @property
     def x(self):
